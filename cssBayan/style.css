@@ -119,3 +119,26 @@ body {
 .item__content__img4 {
     background-image: url('img/Guru.gif');
 }
+
+@media (max-width: 820px) {
+    .title {
+        font-size: 1.7rem;
+        color: rgb(184, 167, 170);
+    }
+    .wrapper-text {
+        width: 70%;
+        font-size: 0.8rem;
+        margin-right: 28%;
+    }
+}
+@media (max-width: 320px) {
+    .title {
+        font-size: 1.5rem;
+        color: rgb(184, 167, 170);
+    }
+    .wrapper-text {
+        width: 70%;
+        font-size: 0.6rem;
+        margin-right: 28%;
+    }
+}
