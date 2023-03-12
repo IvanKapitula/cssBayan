@@ -118,15 +118,16 @@ body {
         width: 2vw;
         height: 2vh;
     }
-    .item__input:checked ~ .item__title > .wrapper > .wrapper-plus {
-        transition: .6s;
-        width: 0;
-        height: 0;
-    }
+
     .item__input ~ .item__title > .wrapper > .wrapper-plus {
         transition: .6s;
         width: 2vw;
         height: 2vh;
+    }
+    .item__input:checked ~ .item__title > .wrapper > .wrapper-plus {
+        transition: .6s;
+        width: 0;
+        height: 0;
     }
     .title {
         font-size: 1.7rem;
@@ -144,15 +145,16 @@ body {
         width: 2vw;
         height: 2vh;
     }
-    .item__input:checked ~ .item__title > .wrapper > .wrapper-plus {
-        transition: .6s;
-        width: 0;
-        height: 0;
-    }
+
     .item__input ~ .item__title > .wrapper > .wrapper-plus {
         transition: .6s;
         width: 2vw;
         height: 2vh;
+    }
+    .item__input:checked ~ .item__title > .wrapper > .wrapper-plus {
+        transition: .6s;
+        width: 0;
+        height: 0;
     }
     .title {
         font-size: 1.5rem;
