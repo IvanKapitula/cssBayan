@@ -15,9 +15,8 @@ body {
 .item__title {
     display: block;
     cursor: pointer;
-    color: white;
+    color: rgb(241, 93, 120);
     transition: all .5s;
-    background: pink;
 }
 .wrapper {
     display: flex;
@@ -37,8 +36,9 @@ body {
    position: absolute;
 }
 .wrapper-plus {
-    width: 3vw;
-    height: 3vh;
+    display: none;
+    width: 2vw;
+    height: 2vh;
     border-radius: 100%;
     background-size: contain;
     background-position: center;
@@ -46,8 +46,9 @@ body {
     background-image: url('img/Plus.jpeg');
 }
 .wrapper-minus {
-    width: 3vw;
-    height: 3vh;
+    display: none;
+    width: 2vw;
+    height: 2vh;
     border-radius: 100%;
     background-size: contain;
     background-position: center;
@@ -55,12 +56,38 @@ body {
     background-image: url('img/Minus.png');
 }
 
-
+.bayan:hover > .bayan__item > .item__input:checked ~ .item__title > .wrapper > .wrapper-minus {
+    display: block;
+}
+.bayan:hover > .bayan__item > .item__input ~ .item__title > .wrapper > .wrapper-plus {
+    display: block;
+}
+.bayan:hover > .bayan__item > .item__input:checked ~ .item__title > .wrapper > .wrapper-plus {
+    display: none;
+}
 .item__content {
     transition: all 1.5s;
-   /*  display: none; */
+    display: none;
 }
-
+.item__input:checked ~ .item__title > .item__content{
+    display: block;
+    color: rgb(184, 167, 170);
+}
+.item__input:checked ~ .item__title {
+    color: rgb(184, 167, 170);
+}
+.bayan:hover > .bayan__item > .item__title {
+    color: rgb(184, 167, 170);  
+}
+.bayan:hover > .bayan__item > .item__title:hover > .item__content {
+    display: block;
+}
+.bayan:hover > .bayan__item > .item__title:hover > .wrapper > .wrapper-minus {
+    display: block;
+}
+.bayan:hover > .bayan__item > .item__title:hover > .wrapper > .wrapper-plus {
+    display: none;
+}
 .item__content__img {
     margin: 3vh auto;
     width: 30vw;
