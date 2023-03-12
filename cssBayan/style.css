@@ -62,7 +62,7 @@ body {
     transition: 1s;
     color: rgb(184, 167, 170);
 }
-
+/* work with img */
 .item__content__img {
     transition: .5s;
     margin: 3vh auto;
@@ -72,6 +72,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .item__content__img1 {
     background-image: url('img/Matr.gif');
 }
@@ -107,6 +108,7 @@ body {
         margin-right: 28%;
     }
 }
+/* only for hover  */
 @media (hover:hover) {
     .bayan:hover > .bayan__item > .item__input:checked ~ .item__title > .wrapper > .wrapper-minus {
         transition: .6s;
