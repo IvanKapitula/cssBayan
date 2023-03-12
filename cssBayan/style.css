@@ -85,17 +85,23 @@ body {
 .item__content__img4 {
     background-image: url('img/Guru.gif');
 }
+
 @media (max-width: 1920px) {
-    .item__input:checked ~ .item__title > .wrapper > .wrapper-minus {
+/*     .item__input:checked ~ .item__title > .wrapper > .wrapper-minus {
         transition: .6s;
         width: 2vw;
         height: 2vh;
+    }
+    .item__input:checked ~ .item__title > .wrapper > .wrapper-plus {
+        transition: .6s;
+        width: 0;
+        height: 0;
     }
     .item__input ~ .item__title > .wrapper > .wrapper-plus {
         transition: .6s;
         width: 2vw;
         height: 2vh;
-    }
+    } */
     .title {
         font-size: 2rem;
         color: rgb(184, 167, 170);
@@ -111,6 +117,11 @@ body {
         transition: .6s;
         width: 2vw;
         height: 2vh;
+    }
+    .item__input:checked ~ .item__title > .wrapper > .wrapper-plus {
+        transition: .6s;
+        width: 0;
+        height: 0;
     }
     .item__input ~ .item__title > .wrapper > .wrapper-plus {
         transition: .6s;
@@ -132,6 +143,11 @@ body {
         transition: .6s;
         width: 2vw;
         height: 2vh;
+    }
+    .item__input:checked ~ .item__title > .wrapper > .wrapper-plus {
+        transition: .6s;
+        width: 0;
+        height: 0;
     }
     .item__input ~ .item__title > .wrapper > .wrapper-plus {
         transition: .6s;
