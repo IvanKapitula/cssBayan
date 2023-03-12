@@ -1,0 +1,83 @@
+body {
+    background-color: rgb(245, 237, 238);
+}
+.bayan {
+    width: 80vw;
+    margin: 5vh auto;
+}
+.title {
+    font-size: 2rem;
+    color: rgb(184, 167, 170);
+}
+.bayan__item {
+
+}
+.item__title {
+    display: block;
+    cursor: pointer;
+    color: white;
+    transition: all .5s;
+    background: pink;
+}
+.wrapper {
+    display: flex;
+
+}
+.wrapper-text {
+    width: 70%;
+    font-size: 1rem;
+    margin-right: 20%;
+}
+
+
+.item__input {
+    width: 0;
+    height: 0;
+    appearance: none;
+   position: absolute;
+}
+.wrapper-plus {
+    width: 3vw;
+    height: 3vh;
+    border-radius: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('img/Plus.jpeg');
+}
+.wrapper-minus {
+    width: 3vw;
+    height: 3vh;
+    border-radius: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('img/Minus.png');
+}
+
+
+.item__content {
+    transition: all 1.5s;
+   /*  display: none; */
+}
+
+.item__content__img {
+    margin: 3vh auto;
+    width: 30vw;
+    height: 30vh;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.item__content__img1 {
+    background-image: url('img/Matr.gif');
+}
+.item__content__img2 {
+    background-image: url('img/Pica.gif');
+}
+.item__content__img3 {
+    background-image: url('img/Code.gif');
+}
+.item__content__img4 {
+    background-image: url('img/Guru.gif');
+}
