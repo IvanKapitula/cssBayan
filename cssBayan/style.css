@@ -52,22 +52,6 @@ body {
     background-image: url('img/Minus.png');
 }
 
-.bayan:hover > .bayan__item > .item__input:checked ~ .item__title > .wrapper > .wrapper-minus {
-    transition: .6s;
-    width: 2vw;
-    height: 2vh;
-}
-.bayan:hover > .bayan__item > .item__input ~ .item__title > .wrapper > .wrapper-plus {
-    transition: .6s;
-    width: 2vw;
-    height: 2vh;
-}
-.bayan:hover > .bayan__item > .item__input:checked ~ .item__title > .wrapper > .wrapper-plus {
-    transition: .6s;
-    width: 0;
-    height: 0;
-}
-
 .item__input:checked ~ .item__title > .item__content > .item__content__img{
     transition: 1s;
     margin: 3vh auto;
@@ -78,26 +62,7 @@ body {
     transition: 1s;
     color: rgb(184, 167, 170);
 }
-.bayan:hover > .bayan__item > .item__title {
-    transition: 1s;
-    color: rgb(184, 167, 170);  
-}
-.bayan:hover > .bayan__item > .item__title:hover > .item__content > .item__content__img {
-    margin: 3vh auto;
-    width: 30vw;
-    height: 30vh;
-    transition: 1s;
-}
-.bayan:hover > .bayan__item > .item__title:hover > .wrapper > .wrapper-minus {
-    transition: .6s;
-    width: 2vw;
-    height: 2vh;
-}
-.bayan:hover > .bayan__item > .item__title:hover > .wrapper > .wrapper-plus {
-    transition: .6s;
-    width: 0;
-    height: 0;
-}
+
 .item__content__img {
     transition: .5s;
     margin: 3vh auto;
@@ -140,5 +105,42 @@ body {
         width: 70%;
         font-size: 0.6rem;
         margin-right: 28%;
+    }
+}
+@media (hover:hover) {
+    .bayan:hover > .bayan__item > .item__input:checked ~ .item__title > .wrapper > .wrapper-minus {
+        transition: .6s;
+        width: 2vw;
+        height: 2vh;
+    }
+    .bayan:hover > .bayan__item > .item__input ~ .item__title > .wrapper > .wrapper-plus {
+        transition: .6s;
+        width: 2vw;
+        height: 2vh;
+    }
+    .bayan:hover > .bayan__item > .item__input:checked ~ .item__title > .wrapper > .wrapper-plus {
+        transition: .6s;
+        width: 0;
+        height: 0;
+    }
+    .bayan:hover > .bayan__item > .item__title {
+        transition: 1s;
+        color: rgb(184, 167, 170);  
+    }
+    .bayan:hover > .bayan__item > .item__title:hover > .item__content > .item__content__img {
+        margin: 3vh auto;
+        width: 30vw;
+        height: 30vh;
+        transition: 1s;
+    }
+    .bayan:hover > .bayan__item > .item__title:hover > .wrapper > .wrapper-minus {
+        transition: .6s;
+        width: 2vw;
+        height: 2vh;
+    }
+    .bayan:hover > .bayan__item > .item__title:hover > .wrapper > .wrapper-plus {
+        transition: .6s;
+        width: 0;
+        height: 0;
     }
 }
