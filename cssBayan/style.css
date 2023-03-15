@@ -1,0 +1,234 @@
+body {
+    background-color: rgb(245, 237, 238);
+}
+.bayan {
+    width: 80vw;
+    margin: 5vh auto;
+}
+.title {
+    font-size: 2rem;
+    color: rgb(184, 167, 170);
+}
+
+.item__title {
+    display: block;
+    cursor: pointer;
+    color: rgb(241, 93, 120);
+    transition: all .5s;
+}
+.item__title:active {
+    cursor: grab;
+    color:rgb(241, 93, 120);
+    opacity: 0.6;
+    transition: 0.08s;
+}
+.item__title:active >.wrapper >.wrapper-text {
+    cursor: grab;
+    color:rgb(241, 93, 120);
+    opacity: 0.8;
+    transition: 0.08s;
+}
+.item__title:active >.wrapper {
+    cursor: grab;
+    color:rgb(241, 93, 120);
+    opacity: 0.8;
+    transition: 0.08s;
+}
+.wrapper {
+    display: flex;
+
+}
+.wrapper-text {
+    width: 70%;
+    font-size: 1rem;
+    margin-right: 28%;
+}
+
+
+.item__input {
+    width: 0;
+    height: 0;
+    appearance: none;
+   position: absolute;
+}
+.wrapper-plus {
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('img/Plus.jpeg');
+}
+.wrapper-minus {
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('img/Minus.png');
+}
+
+.item__input:checked ~ .item__title > .item__content > .item__content__img{
+    transition: 1s;
+    margin: 3vh auto;
+    width: 30vw;
+    height: 30vh;
+}
+.item__input:checked ~ .item__title {
+    transition: 1s;
+    color: rgb(184, 167, 170);
+}
+/* work with img */
+.item__content__img {
+    transition: .5s;
+    margin: 3vh auto;
+    width: 0;
+    height: 0;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.item__content__img1 {
+    background-image: url('img/Matr.gif');
+}
+.item__content__img2 {
+    background-image: url('img/Pica.gif');
+}
+.item__content__img3 {
+    background-image: url('img/Code.gif');
+}
+.item__content__img4 {
+    background-image: url('img/Guru.gif');
+}
+
+@media (max-width: 1920px) {
+/*     .item__input:checked ~ .item__title > .wrapper > .wrapper-minus {
+        transition: .6s;
+        width: 2vw;
+        height: 2vh;
+    }
+    .item__input:checked ~ .item__title > .wrapper > .wrapper-plus {
+        transition: .6s;
+        width: 0;
+        height: 0;
+    }
+    .item__input ~ .item__title > .wrapper > .wrapper-plus {
+        transition: .6s;
+        width: 2vw;
+        height: 2vh;
+    } */
+    .title {
+        font-size: 2rem;
+        color: rgb(184, 167, 170);
+    }
+    .wrapper-text {
+        width: 70%;
+        font-size: 1rem;
+        margin-right: 28%;
+    }
+}
+@media (max-width: 820px) {
+    .item__input:checked ~ .item__title > .wrapper > .wrapper-minus {
+        transition: .6s;
+        width: 2vw;
+        height: 2vh;
+    }
+
+    .item__input ~ .item__title > .wrapper > .wrapper-plus {
+        transition: .6s;
+        width: 2vw;
+        height: 2vh;
+    }
+    .item__input ~ .item__title > .wrapper > .wrapper-minus {
+        transition: .6s;
+        width: 0;
+        height: 0;
+    }
+    .item__input:checked ~ .item__title > .wrapper > .wrapper-plus {
+        transition: .6s;
+        width: 0;
+        height: 0;
+    }
+    .title {
+        font-size: 1.7rem;
+        color: rgb(184, 167, 170);
+    }
+    .wrapper-text {
+        width: 70%;
+        font-size: 0.8rem;
+        margin-right: 28%;
+    }
+}
+@media (max-width: 320px) {
+    .item__input:checked ~ .item__title > .wrapper > .wrapper-minus {
+        transition: .6s;
+        width: 2vw;
+        height: 2vh;
+    }
+
+    .item__input ~ .item__title > .wrapper > .wrapper-plus {
+        transition: .6s;
+        width: 2vw;
+        height: 2vh;
+    }
+    .item__input ~ .item__title > .wrapper > .wrapper-minus {
+        transition: .6s;
+        width: 0;
+        height: 0;
+    }
+    .item__input:checked ~ .item__title > .wrapper > .wrapper-plus {
+        transition: .6s;
+        width: 0;
+        height: 0;
+    }
+    .title {
+        font-size: 1.5rem;
+        color: rgb(184, 167, 170);
+    }
+    .wrapper-text {
+        width: 70%;
+        font-size: 0.6rem;
+        margin-right: 28%;
+    }
+}
+/* only for hover  */
+@media (hover:hover) {
+    .bayan:hover > .bayan__item > .item__input:checked ~ .item__title > .wrapper > .wrapper-minus {
+        transition: .6s;
+        width: 2vw;
+        height: 2vh;
+    }
+    .bayan:hover > .bayan__item > .item__input ~ .item__title > .wrapper > .wrapper-plus {
+        transition: .6s;
+        width: 2vw;
+        height: 2vh;
+    }
+    .bayan:hover > .bayan__item > .item__input:checked ~ .item__title > .wrapper > .wrapper-plus {
+        transition: .6s;
+        width: 0;
+        height: 0;
+    }
+    .bayan:hover > .bayan__item > .item__title {
+        transition: 1s;
+        color: rgb(184, 167, 170);  
+    }
+    .bayan:hover > .bayan__item > .item__title:hover > .item__content > .item__content__img {
+        margin: 3vh auto;
+        width: 30vw;
+        height: 30vh;
+        transition: 1s;
+    }
+    .bayan:hover > .bayan__item > .item__title:hover > .wrapper > .wrapper-minus {
+        transition: .6s;
+        width: 2vw;
+        height: 2vh;
+    }
+    .bayan:hover > .bayan__item > .item__title:hover > .wrapper > .wrapper-plus {
+        transition: .6s;
+        width: 0;
+        height: 0;
+    }
+}
