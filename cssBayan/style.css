@@ -16,6 +16,24 @@ body {
     color: rgb(241, 93, 120);
     transition: all .5s;
 }
+.item__title:active {
+    cursor: grab;
+    color:rgb(241, 93, 120);
+    opacity: 0.6;
+    transition: 0.08s;
+}
+.item__title:active >.wrapper >.wrapper-text {
+    cursor: grab;
+    color:rgb(241, 93, 120);
+    opacity: 0.8;
+    transition: 0.08s;
+}
+.item__title:active >.wrapper {
+    cursor: grab;
+    color:rgb(241, 93, 120);
+    opacity: 0.8;
+    transition: 0.08s;
+}
 .wrapper {
     display: flex;
 
